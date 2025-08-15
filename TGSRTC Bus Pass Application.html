@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC Bus Pass Application</title>
+</head>
+<body>
+
+    <h2 align="center">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+    <h3 align="center">GENERAL BUS PASS APPLICATION</h3>
+
+    <form action="/submit.html" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Applicant Details</legend>
+
+            <span>
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+            </span>
+
+            <span>
+                <label for="father">Father's / Guardian's Name *</label>
+                <input type="text" id="father" name="father" required>
+            </span>
+            <br><br>
+
+            <span>
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </span>
+
+            <span>
+                <label>Gender *</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+            </span>
+            <br><br>
+
+            <span>
+                <label for="age_years">Age As on</label>
+                <input type="number" id="age_years" name="age_years" placeholder="Years"> Year(s)
+                <input type="number" id="age_months" name="age_months" placeholder="Months"> Month(s)
+                <input type="number" id="age_days" name="age_days" placeholder="Days"> Day(s)
+            </span>
+
+            <span>
+                <label for="aadhar">Aadhar No *</label>
+                <input type="text" id="aadhar" name="aadhar" maxlength="12" required>
+            </span>
+            <br><br>
+
+            <span>
+                <label for="mobile_no">Mobile No *</label>
+                <input type="tel" id="mobile_no" name="mobile_no" maxlength="10" required>
+            </span>
+
+            <span>
+                <label for="email">E-Mail ID *</label>
+                <input type="email" id="email" name="email" required>
+            </span>
+            <br><br>
+
+            <span>
+                <label for="photo">Photo *</label>
+                <input type="file" id="photo" name="photo" required>
+            </span>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Residential Address Details</legend>
+
+            <span>
+                <label for="address">Applicant's Address *</label>
+                <textarea id="address" name="address" rows="3" cols="30" required></textarea>
+            </span>
+            <br><br>
+
+            <span>
+                <label for="district">District *</label>
+                <select id="district" name="district" required>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Vizianagaram">Vizianagaram</option>
+                </select>
+            </span>
+
+            <span>
+                <label for="mandal">Mandal *</label>
+                <select id="mandal" name="mandal" required>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                </select>
+            </span>
+
+            <span>
+                <label for="village">Village *</label>
+                <select id="village" name="village" required>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                </select>
+            </span>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Pass Type Details</legend>
+         <span>
+                <label for="City"> City*</label>
+                <select id="City" name="City" required>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                </select>
+         </span>
+         <br><br>
+
+
+         <span>
+                <label for="Passtype"> Pass Type *</label>
+                <select id="Passtype" name="Passtype" required>
+                    <option value="GENERAL PASS">GENERAL PASS</option>
+                    <option value="GENERAL ORDINARY ROUTE PASS MTLY">GENERAL ORDINARY ROUTE PASS MTLY</option>
+                    <option value="GENERAL METRO EXPRESS ROUTE PASS MTLY">GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+                    <option value="ORDINARY PASS">ORDINARY PASS</option>
+                    <option value="METRO EXPRESS">METRO EXPRESS</option>
+                    <option value="METRO DELUXE PASS">METRO DELUXE PASS</option>
+
+
+                </select>
+          </span>
+
+            </fieldset>
+            <br><br>
+              <fieldset>
+            <legend>Mode of Payment/Pass Collection</legend>
+         <span>
+                <label for="Payment"> Payment Mode*</label>
+                <select id="Payment" name="Payment" required>
+                    <option value="select payment mode">Select Payment Mode</option>
+                    <option value="Payment at Counter">Payment at Counter</option>
+                </select>
+         </span>
+         <br><br>
+
+
+         <span>
+                <label for="Pass deliver"> Pass Delivery Mode *</label>
+                <select id="Pass deliver" name="Pass Delivery" required>
+                    <option value="Select Pass Deliver Mode">Select Pass Deliver Mode</option>
+        
+                    <option value="At Counter">At Counter</option>
+                    
+
+
+                </select>
+
+          </span>
+          <br><br>
+          
+         <span>
+                <label for="Center"> Center which you want Collect Pass *</label>
+                <select id="Center" name="Center which you want collect pass" required>
+                    <option value="Select center">Select center</option>
+                    <option value="KPHB Bustand">Kphb Bus stand</option>
+                    <option value="Moosapet ">Moosapet</option>
+                    
+
+
+                </select>
+                
+          </span>
+            </fieldset>
+            <br>
+            
+       <center>  <input type="submit" name="submit" id="submit"></center>
+    </form>
+
+</body>
+</html>
